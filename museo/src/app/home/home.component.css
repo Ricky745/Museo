@@ -1,0 +1,39 @@
+.background {
+  background-image: url('https://i.pinimg.com/564x/8a/0c/e3/8a0ce31446553db9e550e74bfe10de49.jpg');
+  background-position: center;
+  background-size: 100vh auto; 
+  background-attachment: fixed;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@font-face {
+  font-family: 'Graf';
+  src: url('../../assets/font/g2.woff') format('woff2'), 
+ 
+}
+
+.content {
+  text-align: center;
+  font-family: 'Graf', sans-serif;
+  letter-spacing: 10px; 
+  -webkit-text-stroke: 1px rgb(0, 0, 0); /* Aggiungi un contorno al testo per i browser WebKit (Safari, Chrome) */
+  font-size: 100%;
+}
+h1 { 
+  color: rgb(255, 255, 255);
+  font-size: 48px;
+  font-weight: lighter;
+  letter-spacing: 15px; 
+  -webkit-text-stroke: 1px rgb(0, 0, 0); 
+  border-radius: 1px;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .background {
+      background-size: contain;
+  }
+}
+

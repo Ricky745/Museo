@@ -1,0 +1,25 @@
+
+<div class="container">
+    <div class="card-container" *ngFor="let element of mostre2nd">
+      <div class="card">
+        <div class="card-content">
+          <div class="card-image">
+            <img src="{{element.img}}">
+            <div class="category">
+              <h2>{{element.nomeMostra}}</h2>
+              <p>{{element.descrizione}}</p>
+              <button class="graffiti-button"(click)="btn($event)" routerLink="/Mostre/:{{element.id}}">PER SAPERNE DI PIÚ</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card2">
+        <div>
+          <p>Artista: {{element.nomeArtista}}</p>
+          <p>Data di inizio: {{element.dataInizio | date: "mediumDate"}}</p>
+          <p>Data di fine: {{element.dataFine | date: "mediumDate"}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+        

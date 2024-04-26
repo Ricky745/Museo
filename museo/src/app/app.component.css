@@ -1,0 +1,54 @@
+.shadow-button-container {
+    margin: 20px auto; 
+  }
+  
+  .shadow-button-set {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .shadow-button-set > li {
+    display: inline-flex;
+    background: black;
+  }
+  
+  .shadow-button-set > li > button {
+    appearance: none;
+    outline: none;
+    font-size: 8vmin; 
+    border: 3px solid black;
+    background: white;
+    padding: 10px 20px; 
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .shadow-button-set > li > button {
+        will-change: transform;
+        transition: transform .2s ease;
+    }
+  
+    .shadow-button-set > li:hover > button:not(:active),
+    .shadow-button-set > li:focus-within > button:not(:active) {
+        transform: translateX(-10px) translateY(-10px); 
+    }
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+  }
+  
+  html {
+    height: 100%;
+  }
+  
+  body {
+    height: 100%;
+    font-family: system-ui, sans-serif;
+    
+    display: grid;
+    place-content: center;
+  }
+  

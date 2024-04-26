@@ -1,0 +1,46 @@
+<link href="https://fonts.googleapis.com/css2?family=Graffiti+Classic&display=swap" rel="stylesheet">
+
+<ng-template [ngIf]="identificatore === ':1'">
+    <div>
+        <div >
+            <div  *ngFor="let element of mostra1">
+                <div >
+                    <div >
+                        <img class ="img" src="{{element.img}}">
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <div>
+                            <h1>{{element.nomeMostra | uppercase}}</h1>
+                            <p>{{element.descrizione}}</p>
+                            <p>Artista: {{element.nomeArtista}}</p>
+                            <p>Data di inizio: {{element.dataInizio | date: "mediumDate"}}</p>
+                            <p>Data di fine: {{element.dataFine | date: "mediumDate"}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <h1 >LE OPERE</h1>
+            <div >
+            
+            </div>
+            <div *ngFor="let element of mostra1">
+                <div>
+                    <h2 >PIETÀ VATICANA</h2>
+                    <div >
+                        <img src="{{element.imgO1}}">
+                    </div>
+                </div>
+                <div >
+                    <h2 >LEDA E IL CIGNO</h2>
+                    <div >
+                        <img src="{{element.imgO2}}">
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </div>
+</ng-template>
+
