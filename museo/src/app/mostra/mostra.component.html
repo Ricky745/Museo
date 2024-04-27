@@ -11,7 +11,7 @@
                 </div>
                 <div>
                     <div>
-                        <div>
+                        <div class="paragrafo">
                             <h1>{{element.nomeMostra | uppercase}}</h1>
                             <p>{{element.descrizione}}</p>
                             <p>Artista: {{element.nomeArtista}}</p>
@@ -29,10 +29,11 @@
             <div *ngFor="let element of mostra1" class="opera-container">
                 <div>
                   <h2 class="titolo1">opera 1</h2>
-                  <h2 class="titolo2">opera 2</h2>
+                 <img class="imgO1" src="{{element.imgO1}}">   
                 </div>
                 <div>
-                  <img class="imgO1" src="{{element.imgO1}}">
+                
+                  <h2 class="titolo2">opera 2</h2>
                   <img class="imgO2" src="{{element.imgO2}}">
                 </div>
               </div>
