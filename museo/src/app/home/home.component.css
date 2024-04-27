@@ -18,7 +18,7 @@
   text-align: center;
   font-family: 'Graf', sans-serif;
   letter-spacing: 10px; 
-  -webkit-text-stroke: 1px rgb(0, 0, 0); /* Aggiungi un contorno al testo per i browser WebKit (Safari, Chrome) */
+  -webkit-text-stroke: 1px rgb(0, 0, 0); 
   font-size: 100%;
 }
 h1 { 
