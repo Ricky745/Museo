@@ -26,21 +26,259 @@
             <div >
             
             </div>
-            <div *ngFor="let element of mostra1">
+            <div *ngFor="let element of mostra1" class="opera-container">
                 <div>
-                    <h2 >opera 1</h2>
-                    <div >
-                        <img src="{{element.imgO1}}">
-                    </div>
+                  <h2 class="titolo1">opera 1</h2>
+                  <h2 class="titolo2">opera 2</h2>
                 </div>
-                <div >
-                    <h2 >opera 2</h2>
-                    <div >
-                        <img src="{{element.imgO2}}">
-                    </div>
+                <div>
+                  <img class="imgO1" src="{{element.imgO1}}">
+                  <img class="imgO2" src="{{element.imgO2}}">
                 </div>
-            </div>    
+              </div>
+                
         </div>
     </div>
 </ng-template>
 
+<ng-template [ngIf]="identificatore === ':2'">
+    <div>
+        <div >
+            <div  *ngFor="let element of mostra2">
+                <div >
+                    <div >
+                        <img class ="img" src="{{element.img}}">
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <div>
+                            <h1>{{element.nomeMostra | uppercase}}</h1>
+                            <p>{{element.descrizione}}</p>
+                            <p>Artista: {{element.nomeArtista}}</p>
+                            <p>Data di inizio: {{element.dataInizio | date: "mediumDate"}}</p>
+                            <p>Data di fine: {{element.dataFine | date: "mediumDate"}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <h1 >LE OPERE</h1>
+            <div >
+            
+            </div>
+            <div *ngFor="let element of mostra2" class="opera-container">
+                <div>
+                  <h2 class="titolo1">opera 1</h2>
+                  <h2 class="titolo2">opera 2</h2>
+                </div>
+                <div>
+                  <img class="imgO1" src="{{element.imgO1}}">
+                  <img class="imgO2" src="{{element.imgO2}}">
+                </div>
+              </div>
+                
+        </div>
+    </div>
+</ng-template>
+
+<ng-template [ngIf]="identificatore === ':3'">
+    <div>
+        <div >
+            <div  *ngFor="let element of mostra3">
+                <div >
+                    <div >
+                        <img class ="img" src="{{element.img}}">
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <div>
+                            <h1>{{element.nomeMostra | uppercase}}</h1>
+                            <p>{{element.descrizione}}</p>
+                            <p>Artista: {{element.nomeArtista}}</p>
+                            <p>Data di inizio: {{element.dataInizio | date: "mediumDate"}}</p>
+                            <p>Data di fine: {{element.dataFine | date: "mediumDate"}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <h1 >LE OPERE</h1>
+            <div >
+            
+            </div>
+            <div *ngFor="let element of mostra3" class="opera-container">
+                <div>
+                  <h2 class="titolo1">opera 1</h2>
+                  <h2 class="titolo2">opera 2</h2>
+                </div>
+                <div>
+                  <img class="imgO1" src="{{element.imgO1}}">
+                  <img class="imgO2" src="{{element.imgO2}}">
+                </div>
+              </div>
+                
+        </div>
+    </div>
+</ng-template>
+<ng-template [ngIf]="identificatore === ':4'">
+    <div>
+        <div >
+            <div  *ngFor="let element of mostra4">
+                <div >
+                    <div >
+                        <img class ="img" src="{{element.img}}">
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <div>
+                            <h1>{{element.nomeMostra | uppercase}}</h1>
+                            <p>{{element.descrizione}}</p>
+                            <p>Artista: {{element.nomeArtista}}</p>
+                            <p>Data di inizio: {{element.dataInizio | date: "mediumDate"}}</p>
+                            <p>Data di fine: {{element.dataFine | date: "mediumDate"}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <h1 >LE OPERE</h1>
+            <div >
+            
+            </div>
+            <div *ngFor="let element of mostra4" class="opera-container">
+                <div>
+                  <h2 class="titolo1">opera 1</h2>
+                  <h2 class="titolo2">opera 2</h2>
+                </div>
+                <div>
+                  <img class="imgO1" src="{{element.imgO1}}">
+                  <img class="imgO2" src="{{element.imgO2}}">
+                </div>
+              </div>
+                
+        </div>
+    </div>
+</ng-template>
+<ng-template [ngIf]="identificatore === ':5'">
+    <div>
+        <div >
+            <div  *ngFor="let element of mostra5">
+                <div >
+                    <div >
+                        <img class ="img" src="{{element.img}}">
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <div>
+                            <h1>{{element.nomeMostra | uppercase}}</h1>
+                            <p>{{element.descrizione}}</p>
+                            <p>Artista: {{element.nomeArtista}}</p>
+                            <p>Data di inizio: {{element.dataInizio | date: "mediumDate"}}</p>
+                            <p>Data di fine: {{element.dataFine | date: "mediumDate"}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <h1 >LE OPERE</h1>
+            <div >
+            
+            </div>
+            <div *ngFor="let element of mostra5" class="opera-container">
+                <div>
+                  <h2 class="titolo1">opera 1</h2>
+                  <h2 class="titolo2">opera 2</h2>
+                </div>
+                <div>
+                  <img class="imgO1" src="{{element.imgO1}}">
+                  <img class="imgO2" src="{{element.imgO2}}">
+                </div>
+              </div>
+                
+        </div>
+    </div>
+</ng-template>
+<ng-template [ngIf]="identificatore === ':6'">
+    <div>
+        <div >
+            <div  *ngFor="let element of mostra6">
+                <div >
+                    <div >
+                        <img class ="img" src="{{element.img}}">
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <div>
+                            <h1>{{element.nomeMostra | uppercase}}</h1>
+                            <p>{{element.descrizione}}</p>
+                            <p>Artista: {{element.nomeArtista}}</p>
+                            <p>Data di inizio: {{element.dataInizio | date: "mediumDate"}}</p>
+                            <p>Data di fine: {{element.dataFine | date: "mediumDate"}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <h1 >LE OPERE</h1>
+            <div >
+            
+            </div>
+            <div *ngFor="let element of mostra6" class="opera-container">
+                <div>
+                  <h2 class="titolo1">opera 1</h2>
+                  <h2 class="titolo2">opera 2</h2>
+                </div>
+                <div>
+                  <img class="imgO1" src="{{element.imgO1}}">
+                  <img class="imgO2" src="{{element.imgO2}}">
+                </div>
+              </div>
+                
+        </div>
+    </div>
+</ng-template>
+<ng-template [ngIf]="identificatore === ':7'">
+    <div>
+        <div >
+            <div  *ngFor="let element of mostra7">
+                <div >
+                    <div >
+                        <img class ="img" src="{{element.img}}">
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <div>
+                            <h1>{{element.nomeMostra | uppercase}}</h1>
+                            <p>{{element.descrizione}}</p>
+                            <p>Artista: {{element.nomeArtista}}</p>
+                            <p>Data di inizio: {{element.dataInizio | date: "mediumDate"}}</p>
+                            <p>Data di fine: {{element.dataFine | date: "mediumDate"}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <h1 >LE OPERE</h1>
+            <div >
+            
+            </div>
+            <div *ngFor="let element of mostra7" class="opera-container">
+                <div>
+                  <h2 class="titolo1">opera 1</h2>
+                  <h2 class="titolo2">opera 2</h2>
+                </div>
+                <div>
+                  <img class="imgO1" src="{{element.imgO1}}">
+                  <img class="imgO2" src="{{element.imgO2}}">
+                </div>
+              </div>
+                
+        </div>
+    </div>
+</ng-template>
